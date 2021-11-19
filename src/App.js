@@ -38,8 +38,6 @@ class App extends React.Component {
   }
 
   render () {
-    console.log(this.state.shows)
-    console.log('render')
     return(
       <div className="App">
         <button className = "stylebutton" onClick = { () => this.showState(this.state.shows) }>
@@ -53,7 +51,6 @@ class App extends React.Component {
             Hello, my name is
             <span className = "styleName"> {this.state.Person.fullName}</span>
           </h1>
-          
           <h2 className = "styleText">
             My profession is : <span className = "styleProfession"> {this.state.Person.profession}</span>
           </h2>
